@@ -2,16 +2,41 @@
 
 using GroceryListExample;
 
-Item toast = new Item();
-toast.Name = "Yeah Toast";
+Register register = new Register();
 
-Item peanutButter = new Item();
-peanutButter.Name = "Peanut Butter Mayhem";
+Item toast = new Item("Toast", 1.1, 0.1);
+Item tacos = new Item("Taco", 2.0, 0.1);
+Item bigtoast = new Item("BIG Toast", 1.0, 0.1);
 
-Item other = toast;
-other.Name = "Other Toast";
+register.AddItem(tacos);
+register.AddItem(bigtoast);
+register.AddItem(toast);
 
-Console.WriteLine("Other: " + other.Name);
-Console.WriteLine("Toast: " + toast.Name);
-Console.WriteLine("PeanutButter: " + peanutButter.Name);
+register.GenerateReceipt();
+
+Console.WriteLine("Removing Toast from the receipt");
+
+register.RemoveItemByName("toast");
+
+register.GenerateReceipt();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
