@@ -22,20 +22,7 @@ register.GenerateReceipt();
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// prompt
 
 
 
